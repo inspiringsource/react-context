@@ -1,15 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
 
-import ThemeContext from './themeContext';
+import { ThemeContextProvider } from './themeContext'
 
 ReactDOM.render(
-    <ThemeContext.Provider value={"light"}>
-      <App />
-    </ThemeContext.Provider>,
+  <ThemeContextProvider>
+    <App />
+  </ThemeContextProvider>,
 
-  document.getElementById('root')
-);
-
+  document.getElementById('root'),
+)
